@@ -10,7 +10,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+<!-- <script type="text/javascript" src="js/2 copy 2.js?ver=1"></script> -->
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -201,6 +201,9 @@ margin-bottom:42px;
 }
 
 /*편지지 영역*/
+.pic2-section{
+    display: none;
+}
 .pic1-section{
     position:flex;
     width: 100%;
@@ -255,13 +258,6 @@ margin-right: 30px;
 .controls1 span.prev1{right: calc(50% + 50px);}
 .controls1 span.next1{left:calc(50% + 50px);}
 
-/* .pic2-section{
-    display: none;
-} */
-
-.foot{
-    height: 500px;
-}
 
 /* 하단 다운로드 버튼*/
 button {
@@ -298,9 +294,9 @@ button {
     font-style: normal;
 }
 
-div .foot{
-    display: block;
-    height: 500px;
+.foot{
+    display:block;
+    height: 280px;
 }
 
 /* PC용 CSS */
@@ -519,11 +515,13 @@ margin-bottom: 126px;
 }
 
 /*편지지 영역*/
-.pic1-section{
-    display:none;
-}
 
+.pic1-section{
+    overflow: hidden;
+    display: none;
+}
 .pic2-section{
+    display: block;
     position:flex;
     width: 100%;
     background: #EAEAEA;
@@ -618,11 +616,9 @@ div .foot{
 }
 }
 </style>
-<script>
-
-</script>
 </head>
 <body>
+    
     <div id="wrap">
         <section class="headerSection">
             <header class="header cfixed">
@@ -679,49 +675,47 @@ div .foot{
                     <p class="point-text2">mbtree를 즐기면서 얻은 포인트로<br>다양한 편지지를 구매해보세요!</p>
                 </div>
             </section>
-                <section class="pic1-section">
-                    <div class="slide_wrapper1">
-                        <ul class="slides1">
-                            <li><img src="img/편지지1_mb.png"></li>
-                            <li><img src="img/편지지2_mb.png"></li>
-                            <li><img src="img/편지지8_mb.png"></li>
-                            <li><img src="img/편지지3_mb.png"></li>
-                            <li><img src="img/편지지4_mb.png"></li>
-                            <li><img src="img/편지지5_mb.png"></li>
-                            <li><img src="img/편지지6_mb.png"></li>
-                            <li><img src="img/편지지7_mb.png"></li>
+            
+            <section class="pic1-section">
+                <div class="slide_wrapper1">
+                    <ul class="slides1">
+                        <li><img src="img/편지지1_mb.png"></li>
+                        <li><img src="img/편지지2_mb.png"></li>
+                        <li><img src="img/편지지8_mb.png"></li>
+                        <li><img src="img/편지지3_mb.png"></li>
+                        <li><img src="img/편지지4_mb.png"></li>
+                        <li><img src="img/편지지5_mb.png"></li>
+                        <li><img src="img/편지지6_mb.png"></li>
+                        <li><img src="img/편지지7_mb.png"></li>
+                    </ul>
+                </div>
+                <div class="button1">
+                <p class="controls1">
+                    <span class="prev1">prev</span>
+                    <span class="next1">next</span>
+                </p>
+                </div>
+            </section>
+                <section class="pic2-section" data-aos="fade-up">
+                    <div class="slide_wrapper">
+                        <ul class="slides">
+                            <li><img src="img/편지지1 cloud.png"></li>
+                            <li><img src="img/편지지2 ground.png"></li>
+                            <li><img src="img/편지지8.png"></li>
+                            <li><img src="img/편지지3.png"></li>
+                            <li><img src="img/편지지4.png"></li>
+                            <li><img src="img/편지지5 sea.png"></li>
+                            <li><img src="img/편지지6.png"></li>
+                            <li><img src="img/편지지7.png"></li>
                         </ul>
                     </div>
-                    <div class="button1">
-                    <p class="controls1">
-                        <span class="prev1">prev</span>
-                        <span class="next1">next</span>
+                    <div class="button">
+                    <p class="controls">
+                        <span class="prev">prev</span>
+                        <span class="next">next</span>
                     </p>
                     </div>
-                </section>
-                
-                    <section class="pic2-section" data-aos="fade-up">
-                        <div class="slide_wrapper">
-                            <ul class="slides">
-                                <li><img src="img/편지지1 cloud.png"></li>
-                                <li><img src="img/편지지2 ground.png"></li>
-                                <li><img src="img/편지지8.png"></li>
-                                <li><img src="img/편지지3.png"></li>
-                                <li><img src="img/편지지4.png"></li>
-                                <li><img src="img/편지지5 sea.png"></li>
-                                <li><img src="img/편지지6.png"></li>
-                                <li><img src="img/편지지7.png"></li>
-                            </ul>
-                        </div>
-                        <div class="button">
-                        <p class="controls">
-                            <span class="prev">prev</span>
-                            <span class="next">next</span>
-                        </p>
-                        </div>
-                    </section> 
-                
-            </div>
+                </section>     
         </section>
         <button class="downBtn">
             <b>앱 다운로드하기</b>
@@ -731,12 +725,13 @@ div .foot{
             </div>
         </footer>
     </div>
-    <script src="js/2 copy.js"></script>
-    <script src="js/2.js"></script>
     <script>
         AOS.init({
           duration: 3000,
         });
     </script>
+    <script type="text/javascript" src="js/letter_mb2.js"></script>
+    <script type="text/javascript" src="js/letter_pc2.js"></script>
+
 </body>
 </html>
