@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="css/quiz.css">
+
+</head>
+<body>
+    <div id="wrap">
+        <section class="headerSection">
+            <header class="header">
+                <img src="img/mbtree icon 3.svg" height=40px width=30% left=389px top=100px>
+                <img class="down" src="img/download.svg"  onclick="SweetAlert()" height=48px width=30% left=389px top=100px>
+            </header>
+        </section>
+        <section class="content">
+            <section class="question1">
+                <a name="que1">
+                    <div class="first">
+                        <h2 class="textSize">MBTI에 관한 이야기를 하는 걸 좋아하시나요?</h2>
+                    </div> 
+                    <div class="answerBtn1">
+                        <button class="Y" id="Y1" onclick="location.href='#que2';colorChange1(this);" data-transition=“slide”>
+                            <b>좋아합니다</b>
+                        </button><br>
+                        <button class="N" id="N1" onclick="location.href='#que2';colorChange1(this);" data-transition=“slide”>
+                            <b>좋아하진 않아요</b>
+                        </button>
+                    </div>
+                </a>
+            </section>
+            <a name="que2"></a>
+            <section class="question2">
+               
+                    <div class="second">
+                        <h2 class="textSize">새로운 사람들과 이야기 하는걸 좋아하시나요?</h2>
+                    </div> 
+                    <div class="answerBtn2">
+                        <button class="Y" id="Y2" onclick="location.href='#que3';colorChange2(this);">
+                            <b>좋아합니다</b>
+                        </button><br>
+                        <button class="N" id="N2" onclick="location.href='#que3';colorChange2(this);">
+                            <b>좋아하진 않아요</b>
+                        </button>
+                    </div>
+               
+            </section>
+            <a name="que3"></a>
+            <section class="question3">
+
+                    <div class="third">
+                        <h2 class="textSize">주변사람들과 더 빠르게 친해지고 싶으신가요?</h2>
+                    </div> 
+                    <div class="answerBtn3">
+                        <button class="Y" id="Y3" onclick="location.href='#que4';colorChange3(this);">
+                            <b>친해지고 싶어요</b>
+                        </button><br>
+                        <button class="N" id="N3" onclick="location.href='#que4';colorChange3(this);">
+                            <b>괜찮아요</b>
+                        </button>
+                    </div>
+            </section>
+            <a name="que4"></a>
+            <section class="question4"> 
+                    <div class="fourth">
+                        <h2 class="textSize">새로운 사람을 더 안전하게 만나고 싶으신가요?</h2>
+                    </div> 
+                    <div class="answerBtn4">
+                        <button class="Y" id="Y4" onclick="location.href='./introduce.html';colorChange(this);">
+                            <b>안전한 만남이 좋아요</b>
+                        </button><br>
+                        <button class="N" id="N4" onclick="location.href='./introduce.html';colorChange(this);">
+                            <b>그냥 새롭다면 좋아요</b>
+                        </button>
+                    </div>
+            </section>
+        </section>
+        <footer class="footer">
+            <div class="foot">
+            </div>
+        </footer>
+    </div>
+    <script src="js/button.js"></script>
+    <script src="js/alertBtn.js"></script>
+</body>
+</html>
